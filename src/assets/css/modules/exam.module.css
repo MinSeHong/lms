@@ -1,0 +1,96 @@
+:root{
+    --main-font-color: #000f22;
+    --height:70%
+}
+
+.div1 {
+	color: var(--main-font-color);   /* CSS 변수 사용 */
+}
+
+.sidebar{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 650px;
+    height: 50px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding:0px 20px;
+    gap:10px;
+    justify-content: left;
+}
+
+
+.sidebar > div{
+    background-color: rgba(0, 0, 0, 0.075);
+    border-radius: 50px;
+    width: 90px;
+    height: var(--height);
+    text-align: center;
+    line-height: 35px;
+}
+
+.sidebar_input{
+    border: none;
+    border-radius: 50px;
+    height: var(--height);
+    padding: 0px 15px;
+    width: 400px;
+    font-weight: bold;
+}
+
+.sidebar_button{
+    font-weight: bold;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    border: none;
+    position: absolute;
+    margin-left: calc(400px - 5px);
+    transition: all 0.5s;
+}
+
+.sidebar_button:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1000px;
+    margin: 5px 5px;
+    position: relative;
+    gap: 60px 30px;
+    padding:70px 100px;
+    margin: 0px auto 0px auto;
+    background-color: rgb(238, 238, 238);
+    border-radius: 20px;
+    box-shadow:0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.item{
+    position: relative;
+    background-color: black;
+    height: 260px;
+    width: 90%;
+    box-shadow:2px 4px 6px 2px rgba(0, 0, 0, 0.5);
+    background-image: url("https://images.unsplash.com/photo-1542379653-b928db1b4956?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: contain;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item > button{
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    right:2%;
+    top:2%;
+    cursor: pointer;
+}
